@@ -1,0 +1,10 @@
+<h1>All Jedis</h1>
+<div class="list-group">
+    <% jedis.forEach(function(j) { %>
+        <a href="/jedis/<%= j.name %>" class="list-group-item list-group-item-action">
+            <%= j.name %>
+                -
+                <%= j.master ? 'Master' : 'Not a Master' %>
+        </a>
+        <% }); %>
+</div>
